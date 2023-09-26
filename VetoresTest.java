@@ -21,4 +21,13 @@ public class VetoresTest {
         int[] obtido = Vetores.somaVetores(vetorA, vetorB);
         assertArrayEquals(esperado, obtido);
     }
+
+    @Test
+    public void testSomaVetoresMisto(){
+        int[] vetorA = {-10, 0, 10, 20, 30};
+        int[] vetorB = {100, 50, 0, -50, -100};
+        int[] esperado = {90, 50, 10, -30, -70};
+        int[] obtido = Vetores.somaVetores(vetorA, vetorB);
+        assertArrayEquals(esperado, obtido);
+    }
 }
