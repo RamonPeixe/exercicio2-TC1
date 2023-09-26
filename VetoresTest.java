@@ -48,4 +48,13 @@ public class VetoresTest {
         assertArrayEquals(esperado, obtido);
     }
 
+    @Test
+    public void testSomaVetoresIguais(){
+        int[] vetorA = {8, 13, 21, 34, 55};
+        int[] vetorB = {8, 13, 21, 34, 55};
+        int[] esperado = {16, 26, 42, 68, 110};
+        int[] obtido = Vetores.somaVetores(vetorA, vetorB);
+        assertArrayEquals(esperado, obtido);
+    }
+
 }
