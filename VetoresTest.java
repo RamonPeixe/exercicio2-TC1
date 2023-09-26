@@ -65,4 +65,14 @@ public class VetoresTest {
         int[] obtido = Vetores.somaVetores(vetorA, vetorB);
         assertArrayEquals(esperado, obtido);
     }
+
+    @Test
+    public void testSomaVetoresReversos(){
+        int[] vetorA = {1, 2, 3, 4, 5};
+        int[] vetorB = {5, 4, 3, 2, 1};
+        int[] esperado = {6, 6, 6, 6, 6};
+        int[] obtido = Vetores.somaVetores(vetorA, vetorB);
+        assertArrayEquals(esperado, obtido);
+    }
+
 }
