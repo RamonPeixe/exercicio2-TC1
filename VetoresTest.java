@@ -75,4 +75,12 @@ public class VetoresTest {
         assertArrayEquals(esperado, obtido);
     }
 
+    @Test
+    public void testSomaVetoresMuitoGrandes(){
+        int[] vetorA = {12345678, 87654321, 1010101010, 5555555, 11422134};
+        int[] vetorB = {11234567, 88765432, 1101010101, 7777777, 88888888};
+        int[] esperado = {23580245, 176419753, 2111111111, 13333332, 100311022};
+        int[] obtido = Vetores.somaVetores(vetorA, vetorB);
+        assertArrayEquals(esperado, obtido);
+    }
 }
